@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Kdam+Thmor+Pro&family=Protest+Guerrilla&display=swap');
+
+
+:root{
+--primary-color:    #A7244D;
+--secondary-color: #19172A ;
+--accent1-color: #D29668;
+--accent2-color: #E0B999;
+--solid-color: white;
+
+--heading-font: "Kdam Thmor Pro", sans-serif;
+--paragraph-font: "Agdasima", sans-serif;
+}
+
+body {
+    max-width: 1800px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+}
+
+header{
+    background-color: var(--secondary-color);
+    color: var(--solid-color);
+    text-decoration: none;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    padding: 0;
+}
+.logo-img{
+    max-width: 200px;
+}
+
+.link{
+    text-align: center;
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.link a{
+    text-align: center;
+    padding: 1em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.link a:hover{
+    background-color: var(--primary-color);
+    border-radius: 5%;
+}
+
+main{
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 5fr 1fr 3fr 5fr ;
+    grid-template-rows: 1fr 3fr 1fr;
+    max-height: 500px;
+}
+
+main img{
+    max-height: 100%;
+    grid-column: 1/3;
+    grid-row:1/4;
+    z-index: -1;
+}
+
+main p{
+    background-color: var(--secondary-color);
+    color: var(--solid-color);
+    border-radius: 5%;
+    grid-column: 2/5;
+    grid-row:2/3;
+    padding: 6%;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px 50px;
+    max-height: 290px;
+    background-color: var(--secondary-color);
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+.cc{
+    grid-column: 3/6;
+    grid-row: 1/2;
+    color: var(--accent2-color);
+}
+
+.contact{
+    margin: auto;
+    grid-column: 1/8;
+    grid-row: 2/3;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.contact img{
+   height: 80px;
+}
+
+.phone{
+    grid-column: 3/6;
+    grid-row: 3/4;
+    color: var(--accent2-color);
+}
+
+.date{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    color: var(--solid-color);
+}
