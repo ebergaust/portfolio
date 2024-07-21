@@ -20,6 +20,10 @@ body {
     text-align: center;
 }
 
+main{
+    padding: 5%;
+}
+
 h1, h2, h3, h4, h5, h6, a {
     font-family: var(--heading-font);
     color: var(--headline-color-on-white);
@@ -93,28 +97,54 @@ header{
 }
 
 .multi-box{
+    height: 500px;
     margin: 5% 5% 5% 5%;
-    padding: 5%;
+    padding-bottom: 20%;
     display: grid;
-    grid-template-columns: 5fr 1fr 3fr 5fr ;
-    grid-template-rows: 1fr 3fr 1fr;
-    max-height: 500px;
+    grid-template-columns: 5fr 5fr ;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 5%;
 }
 
-.multi-box img{
-    max-height: 100%;
+.multi-box h1{
+    background-color: var(--primary-color);
+    color: var(--solid-color);
     grid-column: 1/3;
-    grid-row:1/4;
+    grid-row: 1/2;
+}
+
+.multi-box .p1{
+    background-color: var(--secondary-color);
+    color: var(--solid-color);
+    max-width: 100%;
+    grid-column: 1/2;
+    grid-row:2/3;
+    padding: 5%;
+}
+
+.multi-box .img1{
+    max-width: 100%;
+    max-height: 100%;
+    grid-column: 2/3;
+    grid-row:2/4;
     z-index: -1;
 }
 
-.multi-box p{
+.multi-box .img2{
+    max-width: 100%;
+    max-height: 100%;
+    grid-column: 1/2;
+    grid-row:3/4;
+    z-index: -1;
+}
+
+.multi-box .p2{
     background-color: var(--secondary-color);
     color: var(--solid-color);
-    max-height: 100%;
-    grid-column: 2/5;
-    grid-row:2/3;
-    padding: 6%;
+    max-width: 100%;
+    grid-column: 2/3;
+    grid-row:3/4;
+    padding: 5%;
 }
 
 .tall-box{    
