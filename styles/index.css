@@ -14,6 +14,7 @@
 }
 
 body {
+    background-image: url("../img/hexgrid.png");
     max-width: 1400px;
     margin: 0 auto;
     font-size: 18px;
@@ -42,6 +43,14 @@ header{
     border-bottom-right-radius: 25%;
     padding: 0;
 }
+.info{
+    background-color: var(--solid-color);
+    padding: 1%;
+    border-style: solid;
+    border-color: #A7244D;
+    border-width: 10px;
+}
+
 .logo-img{
     max-width: 200px;
 }
